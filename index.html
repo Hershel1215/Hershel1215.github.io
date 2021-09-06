@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+
+<title>送给全世界最可爱的人</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url("font/digital-7_mono.ttf") format("truetype");
+        }
+    </style>
+    <style type="text/css">
+        @font-face {
+            font-family: code;
+            src: url("font/FZSJ-QINADRADJC.TTF") format("truetype");
+        }
+    </style>
+    <link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">猪猪：</span><br />
+                <span class="space"><span class="comments">我爱你呀！</span></span><br />
+                <span class="space" /><span class="comments">只有在你的微笑里，我才有呼吸，还贪恋着你的风情，诱惑着你的神秘，埋葬了我的爱情，脉脉之情如一溪春水。
+				</span><br />
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        某某, 这是我们认识的第
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        永远爱你，一辈子，不分离！<br/>
+                        <div class="signature">- 最爱你的人</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var offsetX = $("#loveHeart").width() / 2;
+            var offsetY = $("#loveHeart").height() / 2 - 55;
+            var together = new Date();
+            together.setFullYear(2014, 07, 21);
+            together.setHours(20);
+            together.setMinutes(0);
+            together.setSeconds(0);
+            together.setMilliseconds(0);
+
+            setTimeout(function() {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 2000);
+
+            timeElapse(together);
+            setInterval(function() {
+                timeElapse(together);
+            }, 500);
+            adjustCodePosition();
+            $("#code").typewriter();
+        </script>
+        <audio id="bgmMusic" src="font/music.m4a" preload="auto" type="audio/m4a" autoplay loop></audio>
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc5987e1ba8b95bbc85efa2ecefbfc06e' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+</body>
+
+</html>
