@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>linux常用命令</title>
+      <link href="/2024/05/04/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2024/05/04/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Linux常用命令备忘</p></blockquote><h2 id="拷贝">拷贝</h2><h3 id="scp">scp</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">scp [-Cpqrv] [-P port] [[user@]host1:]file1 [...] [[user@]host2:]file2</span><br><span class="line"><span class="comment"># 简易写法</span></span><br><span class="line">scp [可选参数] file_source file_target</span><br><span class="line"></span><br><span class="line"><span class="comment">#参数解释</span></span><br><span class="line">-C： 允许压缩。</span><br><span class="line">-p：保留原文件的修改时间，访问时间和访问权限。</span><br><span class="line">-q： 不显示传输进度条。</span><br><span class="line">-r： 递归复制整个目录。</span><br><span class="line">-v：详细方式显示输出。用于调试</span><br><span class="line">-P port：注意是大写的P, port是指定数据传输用到的端口号。</span><br></pre></td></tr></table></figure><h3 id="rsync">rsync</h3><p>与其他文件传输工具（如 FTP 或SCP）不同，rsync 的最大特点是会检查发送方和接收方已有的文件，仅传输有变动的部分（默认规则是文件大小或修改时间有变动）。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">rsync -avz -e <span class="string">&quot;ssh -p &lt;port&gt;&quot;</span> <span class="built_in">source</span>/ user@remote_host:/destination</span><br><span class="line"></span><br><span class="line"><span class="comment">#参数解释</span></span><br><span class="line">-a: 除了可以递归同步以外，还可以同步元信息（比如修改时间、权限等）。</span><br><span class="line">-v: 参数表示输出细节。</span><br><span class="line">-z: 参数指定同步时压缩数据。</span><br><span class="line">-e: 参数指定使用 SSH 协议传输数据。在端口号不是22时非常重要。</span><br></pre></td></tr></table></figure><p><strong>Note</strong>: rsync需要注意source后面加了**“ / ”** 的话就是只拷贝source下的所有文件目录，而不拷贝source这个目录</p><h2 id="查找文件">查找文件</h2><h3 id="Find">Find</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件名</span></span><br><span class="line">find ./ -name <span class="string">&quot;*.c&quot;</span> <span class="comment"># 所有后缀为.c的文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#文件大小</span></span><br><span class="line">find /home -size +1M <span class="comment"># home目录下大于1M的s</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>热辣滚烫</title>
       <link href="/2024/04/30/%E7%83%AD%E8%BE%A3%E6%BB%9A%E7%83%AB/"/>
       <url>/2024/04/30/%E7%83%AD%E8%BE%A3%E6%BB%9A%E7%83%AB/</url>
