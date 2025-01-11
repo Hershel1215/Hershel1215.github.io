@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何从应用商店Microsoft Store免费下载安装HEVC视频扩展插件</title>
+      <link href="/2025/01/11/%E5%A6%82%E4%BD%95%E4%BB%8E%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97Microsoft-Store%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85HEVC%E8%A7%86%E9%A2%91%E6%89%A9%E5%B1%95%E6%8F%92%E4%BB%B6/"/>
+      <url>/2025/01/11/%E5%A6%82%E4%BD%95%E4%BB%8E%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97Microsoft-Store%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85HEVC%E8%A7%86%E9%A2%91%E6%89%A9%E5%B1%95%E6%8F%92%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>转载自CSDN，<a href="https://blog.csdn.net/ywd1992/article/details/137456359">https://blog.csdn.net/ywd1992/article/details/137456359</a></p></blockquote><p>在电脑上打开一张HEIC类型的图片提示缺少HEVC解码器，无法打开查看，现象如下：</p><img src="https://s2.loli.net/2025/01/11/DORkGMi671Wthgr.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>这种情况一般会提示我们需要下载安装HEVC解码器，点击“立即下载并安装”会跳转到应用商店，但是我们发现需要付费7元才能下载安装</p><img src="https://s2.loli.net/2025/01/11/M2GEcDbt7ZRyBwK.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>免费安装的方法：</p><p>1、浏览器打开以下链接，点击页面上的安装按钮，会跳转到应用商店，此时我们可以看到在商店的顶端提示“此应用在你的设备上将无法工作”，不用管这个提示。<br><a href="https://apps.microsoft.com/detail/9N4WGH0Z6VHQ?hl=zh-cn&amp;gl=cn">https://apps.microsoft.com/detail/9N4WGH0Z6VHQ?hl=zh-cn&amp;gl=cn</a></p><img src="https://s2.loli.net/2025/01/11/oaN1fDVXm47lGyH.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>2、复制并在浏览器中打开以下链接<br><a href="https://store.rg-adguard.net/">https://store.rg-adguard.net/</a></p><img src="https://s2.loli.net/2025/01/11/8P5Bw6MIraZpmez.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>3、回到刚刚打开的应用商店，点击分享按钮，复制链接</p><img src="https://s2.loli.net/2025/01/11/4FpeqQOaLJKsiwf.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>4、将复制到的链接填写到刚才打开的网站的输入框内，点击前往，点击结果中的第二个下载安装包</p><img src="https://s2.loli.net/2025/01/11/zeVb3T5UtSwGRhK.png" alt="在这里插入图片描述" style="zoom: 50%;" /><img src="https://s2.loli.net/2025/01/11/xlsjpog5A24zdFk.png" alt="在这里插入图片描述" style="zoom:67%;" /><p><strong>注意，若是浏览器无法下载可选择用迅雷等其他下载器下载。</strong></p><p>5、安装刚才下载到的安装包</p><img src="https://s2.loli.net/2025/01/11/KUNbXv5QmEZAwaD.png" alt="在这里插入图片描述" style="zoom:67%;" /><p>6、再次打开heic格式的图片，已经可以正常显示了</p><img src="https://s2.loli.net/2025/01/11/QHDgazOuUdeC6n9.png" alt="在这里插入图片描述" style="zoom:67%;" />]]></content>
+      
+      
+      <categories>
+          
+          <category> 瞎搞 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微软store </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wsl刷流</title>
       <link href="/2025/01/11/wsl%E5%88%B7%E6%B5%81/"/>
       <url>/2025/01/11/wsl%E5%88%B7%E6%B5%81/</url>
