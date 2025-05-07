@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2025/03/21/docker%E4%BB%A3%E7%90%86/"/>
-      <url>/2025/03/21/docker%E4%BB%A3%E7%90%86/</url>
+      <title>docker代理</title>
+      <link href="/2025/05/07/docker%E4%BB%A3%E7%90%86/"/>
+      <url>/2025/05/07/docker%E4%BB%A3%E7%90%86/</url>
       
-        <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/1041557640">https://zhuanlan.zhihu.com/p/1041557640</a></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>docker代理与系统代理不一致的问题，因此需要在docker配置文件中配置代理，并且代理为系统级</p></blockquote><p>参考：</p><p><a href="https://zhuanlan.zhihu.com/p/1041557640">https://zhuanlan.zhihu.com/p/1041557640</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
       
     </entry>
     
