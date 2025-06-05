@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>WT&amp;VScode | MEMORANDUM</title><meta name="author" content="hershel"><meta name="copyright" content="hershel"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="如何让windows terminal像VScode中嵌入的commandline一样使用code命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WT&amp;VScode">
+<meta property="og:url" content="https://hershel1215.github.io/2025/06/05/WT-VScode/index.html">
+<meta property="og:site_name" content="MEMORANDUM">
+<meta property="og:description" content="如何让windows terminal像VScode中嵌入的commandline一样使用code命令">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg">
+<meta property="article:published_time" content="2025-06-05T10:23:27.000Z">
+<meta property="article:modified_time" content="2025-06-05T10:47:06.661Z">
+<meta property="article:author" content="hershel">
+<meta property="article:tag" content="vscode">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg"><link rel="canonical" href="https://hershel1215.github.io/2025/06/05/WT-VScode/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'WT&VScode',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-05 18:47:06'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://s2.loli.net/2024/03/14/WQxHO96fkU5RJSe.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="MEMORANDUM"><span class="site-name">MEMORANDUM</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">WT&amp;VScode</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-05T10:23:27.000Z" title="发表于 2025-06-05 18:23:27">2025-06-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-05T10:47:06.661Z" title="更新于 2025-06-05 18:47:06">2025-06-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Linux/">Linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/2025/06/05/WT-VScode/" data-flag-title="WT&amp;VScode"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span class="leancloud-visitors-count"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>如何让windows terminal像VScode中嵌入的tcommandline一样使用code命令</p>
+</blockquote>
+<h3 id="前言">前言</h3>
+<p>VS Code 远程连接服务器后，可以通过<code>code</code>命令实现打开文件，文件夹，打开新窗口等，这些功能对于一个不擅长<code>Vim</code>的人非常实用。</p>
+<p>比如当我通过commandline进入到了指定目录，当我想查看目录中的某个文件内容时，可以通过cat / vim来实现，但它们都或多或少存在可读性及易用性的问题。<br>
+而若我们通过code命令打开文件，则可以通过本地的vs code查看该文件，很方便。</p>
+<p>然而，由于vs code自带的commandline嵌入在客户端里面，使用起来不如一个独立的terminal方便，因此实际上平时导航目录，查看文件，多还是另外再开一些terminal去实现的。</p>
+<p>但这些terminal， 如 windows terminal 并不能在连接远程后通过code命令打开vs code 客户端查看文件或者打开文件夹。</p>
+<p>因此，本文通过总结google上的一些搜索结果，找到一条可以用windows terminal实现code命令的方法。</p>
+<h3 id="准备工作">准备工作</h3>
+<p>想要通过code命令将远程vscode server与本地vscode client联动起来，还需要先通过ssh让彼此连接上，也就是在vs code中使用remote ssh连接远程主机。</p>
+<p>本文提供一个可以通过terminal连接远程主机的思路：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code --remote ssh-remote+remote_server /code/my_project</span><br><span class="line"><span class="comment"># e.g. code --remote ssh-remote+&lt;user&gt;@&lt;server&gt;:&lt;port&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>reference : <a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/remote/troubleshooting#_connect-to-a-remote-host-from-the-terminal">https://code.visualstudio.com/docs/remote/troubleshooting#_connect-to-a-remote-host-from-the-terminal</a></p>
+</blockquote>
+<h3 id="实现code命令">实现<code>code</code>命令</h3>
+<h6 id="code脚本"><code>code</code>脚本</h6>
+<ol>
+<li><code>vim code.sh</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Zsh to Bash conversion notes:</span></span><br><span class="line"><span class="comment"># 1. Replaced zsh-specific glob modifiers (*oc[1]N) with ls/stat for timestamp sorting</span></span><br><span class="line"><span class="comment"># 2. Changed local variable declarations to use standard Bash syntax</span></span><br><span class="line"><span class="comment"># 3. Replaced array indexing and pattern matching with Bash equivalents</span></span><br><span class="line"><span class="comment"># 4. Added nullglob behavior manually using conditional checks</span></span><br><span class="line"><span class="comment"># 5. Used parameter expansion instead of zsh-specific syntax</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the latest VSCode server node process by modification time</span></span><br><span class="line">vscode_servers=(<span class="string">&quot;<span class="variable">$HOME</span>&quot;</span>/.vscode-server/cli/servers/*/server/node)</span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$&#123;#vscode_servers[@]&#125;</span> -eq 0 ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="comment"># Also check the legacy .vscodeserver directory if .vscode-server is empty</span></span><br><span class="line">    vscode_servers=(<span class="string">&quot;<span class="variable">$HOME</span>&quot;</span>/.vscodeserver/cli/servers/*/server/node)</span><br><span class="line">    <span class="keyword">if</span> [[ <span class="variable">$&#123;#vscode_servers[@]&#125;</span> -eq 0 ]]; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="string">&quot;VSCode remote server directory not found&quot;</span></span><br><span class="line">        <span class="built_in">exit</span> 1</span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the most recently modified server directory</span></span><br><span class="line">latest_server=<span class="string">&quot;&quot;</span></span><br><span class="line"><span class="keyword">for</span> server <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$&#123;vscode_servers[@]&#125;</span>&quot;</span>; <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">if</span> [[ -f <span class="variable">$server</span> ]]; <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> [[ -z <span class="variable">$latest_server</span> ]] || [[ <span class="variable">$server</span> -nt <span class="variable">$latest_server</span> ]]; <span class="keyword">then</span></span><br><span class="line">            latest_server=<span class="variable">$server</span></span><br><span class="line">        <span class="keyword">fi</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="variable">$latest_server</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;VSCode remote server process not found&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">node_process=<span class="variable">$latest_server</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the running server process</span></span><br><span class="line">our_process=<span class="string">&quot;&quot;</span></span><br><span class="line"><span class="keyword">while</span> IFS= <span class="built_in">read</span> -r line; <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">if</span> [[ <span class="variable">$line</span> == *<span class="string">&quot;<span class="variable">$node_process</span>&quot;</span>* &amp;&amp; <span class="variable">$line</span> == *<span class="string">&quot;start-server&quot;</span>* ]]; <span class="keyword">then</span></span><br><span class="line">        our_process=<span class="variable">$line</span></span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span> &lt; &lt;(ps ux)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="variable">$our_process</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Running VSCode server not found&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extract PID from the process info</span></span><br><span class="line">our_pid=$(<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$our_process</span>&quot;</span> | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>)</span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="variable">$our_pid</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;PID for VSCode server could not be found&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the socket associated with the PID</span></span><br><span class="line">our_socket=$(ss -lx -p -s | grep <span class="string">&quot;pid=<span class="variable">$our_pid</span>&quot;</span> | grep <span class="string">&quot;\.sock&quot;</span> | <span class="built_in">head</span> -n1)</span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="variable">$our_socket</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;VSCode IPC socket not found&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Extract socket path from output</span></span><br><span class="line">socket_path=$(<span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$our_socket</span>&quot;</span> | awk <span class="string">&#x27;&#123;print $5&#125;&#x27;</span>)</span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="variable">$socket_path</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;VSCode IPC socket path could not be extracted&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Trim the &quot;/node&quot; string from the node_process path</span></span><br><span class="line">base_process=<span class="variable">$&#123;node_process%&quot;/node&quot;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Execute with the appropriate environment variable</span></span><br><span class="line">VSCODE_IPC_HOOK_CLI=<span class="string">&quot;<span class="variable">$socket_path</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;base_process&#125;</span>/bin/remote-cli/code&quot;</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<h6 id="添加到bashrc">添加到bashrc</h6>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 设为可执行文件</span></span><br><span class="line"><span class="built_in">chmod</span> +x code.sh</span><br><span class="line"><span class="comment"># 2. 添加别名并写入bashrc</span></span><br><span class="line">vim ~/.bashrc</span><br><span class="line"><span class="built_in">alias</span> code=/path/to/code.sh</span><br></pre></td></tr></table></figure>
+<h6 id="测试">测试</h6>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code -v</span><br><span class="line">code -h</span><br></pre></td></tr></table></figure>
+<h3 id="如何使用？">如何使用？</h3>
+<ol>
+<li>确保有一个vs code client连接上了目标主机</li>
+<li>在terminal直接使用code命令，可以打开新的窗口，也可以查看文件</li>
+</ol>
+<h3 id="后记">后记</h3>
+<p>再记录一些 <code>code</code> 常用命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">code -r . <span class="comment">#在当前目录打开,并重用窗口</span></span><br><span class="line">code -n . <span class="comment">#在当前目录打开，并使用新的窗口</span></span><br><span class="line">code file <span class="comment">#查看文件</span></span><br><span class="line">code -d file1 file2 <span class="comment">#比较两个文件的差异</span></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Hershel1215.github.io">hershel</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://hershel1215.github.io/2025/06/05/WT-VScode/">https://hershel1215.github.io/2025/06/05/WT-VScode/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://Hershel1215.github.io" target="_blank">MEMORANDUM</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/vscode/">vscode</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/05/23/tmux%E6%89%8B%E5%86%8C/" title="tmux手册"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">tmux手册</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/12/05/Uke9q1Y2tLjh8EP.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">hershel</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Hershel1215" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:gin591215@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0code%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">实现code命令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#code%E8%84%9A%E6%9C%AC"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">code脚本</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%B0bashrc"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">添加到bashrc</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">测试</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">如何使用？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/05/WT-VScode/" title="WT&amp;VScode">WT&amp;VScode</a><time datetime="2025-06-05T10:23:27.000Z" title="发表于 2025-06-05 18:23:27">2025-06-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/23/tmux%E6%89%8B%E5%86%8C/" title="tmux手册">tmux手册</a><time datetime="2025-05-23T12:16:21.000Z" title="发表于 2025-05-23 20:16:21">2025-05-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/07/docker%E4%BB%A3%E7%90%86/" title="docker代理">docker代理</a><time datetime="2025-05-07T14:16:00.000Z" title="发表于 2025-05-07 22:16:00">2025-05-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/16/chisel%E4%BD%BF%E7%94%A8/" title="chisel使用">chisel使用</a><time datetime="2025-03-16T13:57:13.000Z" title="发表于 2025-03-16 21:57:13">2025-03-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/04/windows/" title="windows">windows</a><time datetime="2025-03-04T06:10:01.000Z" title="发表于 2025-03-04 14:10:01">2025-03-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By hershel</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'Uy5ti2IFybYBWus5Ou9Lujyg-gzGzoHsz',
+      appKey: 'zjWJVqDke6lLWzOV99lWtzBh',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
