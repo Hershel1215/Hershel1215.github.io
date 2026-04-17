@@ -35,7 +35,7 @@ My research interests include **knowledge distillation**, **zero-shot sketch-bas
 <div class="pub">
   <img src="assets/img/pub/tcsvt2026.png" class="pub-img" alt="">
   <span class="badge">TCSVT 2026</span>
-  <b>Monotonic Rank Knowledge Distillation via Kendall Correlation</b> &nbsp;<span style="font-size:0.85em; color:#888;">(under review)</span><br>
+  <b><a href="https://doi.org/10.1109/TCSVT.2026.3662408" target="_blank">Monotonic Rank Knowledge Distillation via Kendall Correlation</a></b><br>
   <b>Xuewan He</b>, J. Wang, Y. Su, D. Liu, J. Zhao, G. Lu<br>
   <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2026
   <div class="pub-clear"></div>
