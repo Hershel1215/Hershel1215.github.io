@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #333;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    h1 { font-size: 2em; margin-bottom: 4px; margin-top: 0; }
+    h2 {
+      font-size: 1.15em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 32px;
+    }
+    img.avatar {
+      float: right;
+      margin: 0 0 20px 28px;
+      width: 165px;
+      border-radius: 6px;
+    }
+    a { color: #2772b2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a56a8;
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 0.82em;
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    .pub { margin-bottom: 14px; line-height: 1.5; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 5px; }
+    .clear { clear: both; }
+    footer {
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.85em;
+      border-top: 1px solid #eee;
+      padding-top: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+  <footer>&copy; Xuewan He</footer>
+</body>
+</html>
