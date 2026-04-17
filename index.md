@@ -35,7 +35,7 @@ My research interests include **knowledge distillation**, **zero-shot sketch-bas
 <div class="pub">
   <img src="assets/img/pub/tcsvt2026.png" class="pub-img" alt="">
   <span class="badge">TCSVT 2026</span>
-  <b>Monotonic Rank Knowledge Distillation via Kendall Correlation</b><br>
+  <b>Monotonic Rank Knowledge Distillation via Kendall Correlation</b> &nbsp;<span style="font-size:0.85em; color:#888;">(under review)</span><br>
   <b>Xuewan He</b>, J. Wang, Y. Su, D. Liu, J. Zhao, G. Lu<br>
   <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2026
   <div class="pub-clear"></div>
@@ -44,7 +44,7 @@ My research interests include **knowledge distillation**, **zero-shot sketch-bas
 <div class="pub">
   <img src="assets/img/pub/icme2024.png" class="pub-img" alt="">
   <span class="badge">ICME 2024</span>
-  <b>Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval</b><br>
+  <b><a href="https://ieeexplore.ieee.org/document/10687519" target="_blank">Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval</a></b><br>
   <b>Xuewan He</b>, J. Wang, Q. Xia, G. Lu, Y. Tang, H. Lu<br>
   <em>IEEE International Conference on Multimedia and Expo</em>, 2024
   <div class="pub-clear"></div>
@@ -53,9 +53,9 @@ My research interests include **knowledge distillation**, **zero-shot sketch-bas
 <div class="pub">
   <img src="assets/img/pub/prism2025.png" class="pub-img" alt="">
   <span class="badge">arXiv 2025</span>
-  <b>PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion</b><br>
+  <b><a href="https://arxiv.org/abs/2509.16897" target="_blank">PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion</a></b><br>
   <b>Xuewan He</b>, J. Wang, Z. Cheng, Y. Su, S. Huang, G. Lu<br>
-  <em>arXiv:2509.16897</em>, 2025 &nbsp;[<a href="https://arxiv.org/abs/2509.16897">paper</a>]
+  <em>arXiv:2509.16897</em>, 2025
   <div class="pub-clear"></div>
 </div>
 
