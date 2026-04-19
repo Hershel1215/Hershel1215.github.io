@@ -20,7 +20,7 @@ Chengdu, China
 ## Biography
 
 I am a PhD student at the University of Electronic Science and Technology of China (UESTC).
-My research interests include **knowledge distillation**, **zero-shot sketch-based image retrieval**, and **multi-agent systems**.
+My research interests include **knowledge distillation**, **zero-shot learning**, and **vision-language models**.
 
 *Feel free to contact me if you are interested in discussing or collaborating.*
 
@@ -65,7 +65,7 @@ My research interests include **knowledge distillation**, **zero-shot sketch-bas
 
 ## Education
 
-**University of Electronic Science and Technology of China (UESTC)**  
-PhD Student &nbsp;·&nbsp; Sep. 2023 – Present
+- **Ph.D.** in Computer Science, UESTC · Institute of Intelligent Computing &nbsp;·&nbsp; Sep. 2024 – Present &nbsp;*(GPA: 83.6/100)*
+- **M.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2022 – Jun. 2024 &nbsp;*(GPA: 85.3/100)*
+- **B.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2018 – Jun. 2022 &nbsp;*(GPA: 89.3/100)*
 
-<!-- Add more education history here -->
