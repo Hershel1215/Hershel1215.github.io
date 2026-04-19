@@ -2,18 +2,26 @@
 layout: default
 ---
 
-<img class="avatar" src="assets/img/prof_pic.jpg" alt="Xuewan He">
-
-# Xuewan He
-
-**PhD Student**  
-University of Electronic Science and Technology of China (UESTC)  
-Chengdu, China
-
-📧 hershel@std.uestc.edu.cn &nbsp;·&nbsp;
-[Google Scholar](https://scholar.google.com/citations?user=NBQNxVkAAAAJ) &nbsp;·&nbsp;
-[GitHub](https://github.com/Hershel1215) &nbsp;·&nbsp;
-[Personal Blog](https://hershel1215.github.io/blog)
+<div class="profile-section">
+  <img class="avatar" src="assets/img/prof_pic.jpg" alt="Xuewan He">
+  <div class="profile-text">
+    <h1>Xuewan He</h1>
+    <p>
+      <strong>PhD Student</strong><br>
+      University of Electronic Science and Technology of China (UESTC)<br>
+      Chengdu, China
+    </p>
+    <p class="profile-links">
+      📧 <a href="mailto:hershel@std.uestc.edu.cn">hershel@std.uestc.edu.cn</a>
+      &nbsp;·&nbsp;
+      <a href="https://scholar.google.com/citations?user=NBQNxVkAAAAJ">Google Scholar</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/Hershel1215">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="https://hershel1215.github.io/blog">Personal Blog</a>
+    </p>
+  </div>
+</div>
 
 ---
 
