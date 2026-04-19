@@ -5,22 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}</title>
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333333;
+      --border: #dddddd;
+      --link: #2772b2;
+      --badge-bg: #e8f0fe;
+      --badge-color: #1a56a8;
+      --sub-text: #aaaaaa;
+      --img-border: #eeeeee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #c9d1d9;
+        --border: #30363d;
+        --link: #58a6ff;
+        --badge-bg: #1c2a3a;
+        --badge-color: #79b8ff;
+        --sub-text: #8b949e;
+        --img-border: #30363d;
+      }
+    }
     * { box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       max-width: 860px;
       margin: 40px auto;
       padding: 0 24px;
-      color: #333;
+      color: var(--text);
+      background-color: var(--bg);
       line-height: 1.65;
       font-size: 15px;
     }
     h1 { font-size: 2em; margin-bottom: 4px; margin-top: 0; }
     h2 {
       font-size: 1.15em;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--border);
       padding-bottom: 5px;
       margin-top: 32px;
+    }
+    h3 {
+      font-size: 1em;
+      color: var(--sub-text);
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
     img.avatar {
       float: right;
@@ -28,12 +57,13 @@
       width: 165px;
       border-radius: 6px;
     }
-    a { color: #2772b2; text-decoration: none; }
+    a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
     .badge {
       display: inline-block;
-      background: #e8f0fe;
-      color: #1a56a8;
+      background: var(--badge-bg);
+      color: var(--badge-color);
       border-radius: 4px;
       padding: 1px 7px;
       font-size: 0.82em;
@@ -49,7 +79,7 @@
       border-radius: 4px;
       margin-right: 16px;
       margin-bottom: 4px;
-      border: 1px solid #eee;
+      border: 1px solid var(--img-border);
     }
     .pub-clear { clear: both; }
     ul { padding-left: 22px; }
@@ -57,9 +87,9 @@
     .clear { clear: both; }
     footer {
       margin-top: 40px;
-      color: #aaa;
+      color: var(--sub-text);
       font-size: 0.85em;
-      border-top: 1px solid #eee;
+      border-top: 1px solid var(--border);
       padding-top: 12px;
       text-align: center;
     }

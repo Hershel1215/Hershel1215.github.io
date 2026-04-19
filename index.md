@@ -26,13 +26,9 @@ My research interests include **knowledge distillation**, **zero-shot learning**
 
 ## News
 
-- **[2025]** Paper accepted at **ICASSP 2026** (CCF-B): *PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion* — **First Author**
-- **[2025]** Paper accepted at **AAAI 2026** (CCF-A): *Towards Distance-Invariant Radio Frequency Fingerprinting via Augmented Unsupervised Learning* — Co-author
-- **[2025]** Paper accepted at **ICASSP 2026** (CCF-B): *SSCR: Efficient Multimodal Cloud Removal Framework via Exploiting Structural Semantics in SAR* — Co-author
-- **[2025]** Paper accepted at **Tsinghua Science and Technology (TST)** (CAS Q2): *PEAK: Pure Logit Distillation via Multi-granularity Knowledge Transfer* — Co-author
-- **[2024]** Paper accepted at **TCE 2024** (CAS Q2): *Learning Communication With Limited Range in Multi-Agent Cooperative Tasks* — Co-author
-- **[2024]** Paper accepted at **ICME 2024** (CCF-B): *Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval* — **First Author**
-- **[2024]** Paper accepted at **TCSVT** (CAS Q1): *Monotonic Rank Knowledge Distillation via Kendall Correlation* — **First Author**
+- 🎉 **[Jan. 2026]** First-author paper *PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion* accepted at **ICASSP 2026** (CCF-B).
+- 📝 **[Jun. 2025]** First-author paper *Monotonic Rank Knowledge Distillation via Kendall Correlation* accepted at **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)** (CAS Q1).
+- 🎉 **[Apr. 2024]** First-author paper *Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval* accepted at **ICME 2024** (CCF-B).
 
 
 ## Publications
