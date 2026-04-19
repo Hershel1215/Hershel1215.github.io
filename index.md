@@ -26,8 +26,9 @@ My research interests include **knowledge distillation**, **zero-shot learning**
 
 ## News
 
+- 🎉 **[Feb. 2026]** Co-first-author paper *WaveKD: A Unified Frequency-Aware Distillation Framework for SAR Ship Recognition* accepted at **ICME 2026** (CCF-B).
+- 🎉 **[Feb. 2026]** First-author paper *Monotonic Rank Knowledge Distillation via Kendall Correlation* accepted at **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)** (CAS Q1).
 - 🎉 **[Jan. 2026]** First-author paper *PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion* accepted at **ICASSP 2026** (CCF-B).
-- 📝 **[Jun. 2025]** First-author paper *Monotonic Rank Knowledge Distillation via Kendall Correlation* accepted at **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)** (CAS Q1).
 - 🎉 **[Apr. 2024]** First-author paper *Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval* accepted at **ICME 2024** (CCF-B).
 
 
@@ -66,6 +67,8 @@ My research interests include **knowledge distillation**, **zero-shot learning**
 
 ### Co-authored Papers
 
+- <span class="badge">ICME 2026</span> &nbsp; Cencen Liu\*, **Xuewan He**\*, Zihan Cheng, et al. WaveKD: A Unified Frequency-Aware Distillation Framework for SAR Ship Recognition &nbsp;·&nbsp; CCF-B &nbsp;·&nbsp; <em>Co-first Author</em>
+- <span class="badge">ICME 2026</span> &nbsp; Jinxin Yang, **Xuewan He**, Jielei Wang, et al. LatentDFKD: Resolving Ill-Posed Pixel Inversion in Data-Free Distillation through Latent Modeling &nbsp;·&nbsp; CCF-B
 - <span class="badge">AAAI 2026</span> &nbsp; Shiyue Huang, Yuchen Su, ..., **Xuewan He**, et al. [Towards Distance-Invariant Radio Frequency Fingerprinting via Augmented Unsupervised Learning]() &nbsp;·&nbsp; CCF-A
 - <span class="badge">ICASSP 2026</span> &nbsp; Zihan Cheng, Yansong Lin, **Xuewan He**, et al. [SSCR: Efficient Multimodal Cloud Removal Framework via Exploiting Structural Semantics in SAR]() &nbsp;·&nbsp; CCF-B
 - <span class="badge">TST 2025</span> &nbsp; Qianxin Xia, Jielei Wang, **Xuewan He**, et al. [PEAK: Pure Logit Distillation via Multi-granularity Knowledge Transfer](https://doi.org/10.26599/TST.2026.9010008) &nbsp;·&nbsp; CAS Q2
