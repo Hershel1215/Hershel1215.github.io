@@ -26,18 +26,34 @@ My research interests include **knowledge distillation**, **zero-shot learning**
 
 ## News
 
-- **[2025]** One paper submitted to arXiv on data-free knowledge distillation (PRISM).
-- **[2024]** One paper accepted at ICME 2024.
+- **[2025]** Paper accepted at **ICASSP 2026** (CCF-B): *PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion* — **First Author**
+- **[2025]** Paper accepted at **AAAI 2026** (CCF-A): *Towards Distance-Invariant Radio Frequency Fingerprinting via Augmented Unsupervised Learning* — Co-author
+- **[2025]** Paper accepted at **ICASSP 2026** (CCF-B): *SSCR: Efficient Multimodal Cloud Removal Framework via Exploiting Structural Semantics in SAR* — Co-author
+- **[2025]** Paper accepted at **Tsinghua Science and Technology (TST)** (CAS Q2): *PEAK: Pure Logit Distillation via Multi-granularity Knowledge Transfer* — Co-author
+- **[2024]** Paper accepted at **TCE 2024** (CAS Q2): *Learning Communication With Limited Range in Multi-Agent Cooperative Tasks* — Co-author
+- **[2024]** Paper accepted at **ICME 2024** (CCF-B): *Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval* — **First Author**
+- **[2024]** Paper accepted at **TCSVT** (CAS Q1): *Monotonic Rank Knowledge Distillation via Kendall Correlation* — **First Author**
 
 
 ## Publications
+
+### Selected First-Author Papers
 
 <div class="pub">
   <img src="assets/img/pub/tcsvt2026.png" class="pub-img" alt="">
   <span class="badge">TCSVT 2026</span>
   <b><a href="https://doi.org/10.1109/TCSVT.2026.3662408" target="_blank">Monotonic Rank Knowledge Distillation via Kendall Correlation</a></b><br>
   <b>Xuewan He</b>, J. Wang, Y. Su, D. Liu, J. Zhao, G. Lu<br>
-  <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2026
+  <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2026 &nbsp;·&nbsp; CAS Q1
+  <div class="pub-clear"></div>
+</div>
+
+<div class="pub">
+  <img src="assets/img/pub/prism2025.png" class="pub-img" alt="">
+  <span class="badge">ICASSP 2026</span>
+  <b><a href="https://arxiv.org/abs/2509.16897" target="_blank">PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion</a></b><br>
+  <b>Xuewan He</b>, J. Wang, Z. Cheng, Y. Su, S. Huang, G. Lu<br>
+  <em>IEEE International Conference on Acoustics, Speech and Signal Processing</em>, 2026 &nbsp;·&nbsp; CCF-B
   <div class="pub-clear"></div>
 </div>
 
@@ -46,26 +62,22 @@ My research interests include **knowledge distillation**, **zero-shot learning**
   <span class="badge">ICME 2024</span>
   <b><a href="https://ieeexplore.ieee.org/document/10687519" target="_blank">Cross-Domain Feature Semantic Calibration for Zero-Shot Sketch-Based Image Retrieval</a></b><br>
   <b>Xuewan He</b>, J. Wang, Q. Xia, G. Lu, Y. Tang, H. Lu<br>
-  <em>IEEE International Conference on Multimedia and Expo</em>, 2024
+  <em>IEEE International Conference on Multimedia and Expo</em>, 2024 &nbsp;·&nbsp; CCF-B
   <div class="pub-clear"></div>
 </div>
-
-<div class="pub">
-  <img src="assets/img/pub/prism2025.png" class="pub-img" alt="">
-  <span class="badge">arXiv 2025</span>
-  <b><a href="https://arxiv.org/abs/2509.16897" target="_blank">PRISM: Precision-Recall Informed Data-Free Knowledge Distillation via Generative Diffusion</a></b><br>
-  <b>Xuewan He</b>, J. Wang, Z. Cheng, Y. Su, S. Huang, G. Lu<br>
-  <em>arXiv:2509.16897</em>, 2025
-  <div class="pub-clear"></div>
-</div>
-
-
 
 <div class="clear"></div>
 
+### Co-authored Papers
+
+- <span class="badge">AAAI 2026</span> &nbsp; Shiyue Huang, Yuchen Su, ..., **Xuewan He**, et al. [Towards Distance-Invariant Radio Frequency Fingerprinting via Augmented Unsupervised Learning]() &nbsp;·&nbsp; CCF-A
+- <span class="badge">ICASSP 2026</span> &nbsp; Zihan Cheng, Yansong Lin, **Xuewan He**, et al. [SSCR: Efficient Multimodal Cloud Removal Framework via Exploiting Structural Semantics in SAR]() &nbsp;·&nbsp; CCF-B
+- <span class="badge">TST 2025</span> &nbsp; Qianxin Xia, Jielei Wang, **Xuewan He**, et al. [PEAK: Pure Logit Distillation via Multi-granularity Knowledge Transfer](https://doi.org/10.26599/TST.2026.9010008) &nbsp;·&nbsp; CAS Q2
+- <span class="badge">TCE 2024</span> &nbsp; Chengyu Ning, Guoming Lu, **Xuewan He**, et al. [Learning Communication With Limited Range in Multi-Agent Cooperative Tasks](https://doi.org/10.1109/TCE.2024.3502210) &nbsp;·&nbsp; CAS Q2
+
 ## Education
 
-- **Ph.D.** in Computer Science, UESTC · Institute of Intelligent Computing &nbsp;·&nbsp; Sep. 2024 – Present &nbsp;*(GPA: 83.6/100)*
-- **M.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2022 – Jun. 2024 &nbsp;*(GPA: 85.3/100)*
-- **B.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2018 – Jun. 2022 &nbsp;*(GPA: 89.3/100)*
+- **Ph.D.** in Computer Science, UESTC · Institute of Intelligent Computing &nbsp;·&nbsp; Sep. 2024 – Present
+- **M.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2022 – Jun. 2024
+- **B.S.** in Computer Science, UESTC · School of Computer Science &nbsp;·&nbsp; Sep. 2018 – Jun. 2022
 
