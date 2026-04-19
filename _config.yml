@@ -1,4 +1,7 @@
 title: Xuewan He
 author:
   name: Xuewan He
-description: PhD Student at UESTC
+description: "Xuewan He (何雪湾) — PhD student at UESTC, working on knowledge distillation, zero-shot learning, and vision-language models."
+
+plugins:
+  - jekyll-sitemap
